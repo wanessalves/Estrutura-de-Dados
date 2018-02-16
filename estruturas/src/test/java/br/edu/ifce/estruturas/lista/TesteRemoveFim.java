@@ -1,15 +1,20 @@
 package br.edu.ifce.estruturas.lista;
 
-public class TesteContemElemento {
+public class TesteRemoveFim {
 
 	public static void main(String[] args) {
+		
 		ListaLigada lista = new ListaLigada();
 	    
 	    lista.adicionaNoComeco("Rafael");
 	    lista.adicionaNoComeco("Paulo");
+	    lista.adicionaNoComeco("Camila");
 	    
-	    System.out.println(lista.contem("Rafael"));
-	    System.out.println(lista.contem("Wanessa"));
+	    System.out.println(lista);
+	    
+	    lista.removeDoFim();
+	    
+	    System.out.println(lista);
 
 	}
 

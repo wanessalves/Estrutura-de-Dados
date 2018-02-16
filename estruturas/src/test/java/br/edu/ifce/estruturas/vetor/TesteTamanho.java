@@ -1,8 +1,10 @@
 package br.edu.ifce.estruturas.vetor;
 
-public class TesteAdicionaNoFim {
+public class TesteTamanho {
 
 	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
 		Aluno a1 = new Aluno();
 		Aluno a2 = new Aluno();
 		Aluno a3 = new Aluno();
@@ -24,7 +26,16 @@ public class TesteAdicionaNoFim {
 		System.out.println(a2);
 		System.out.println(a3);
 		
+		Vetor lista = new Vetor();
+				
+		lista.adicionaMeio(0, a2);
+		lista.adicionaMeio(1, a1);
+		lista.adicionaMeio(2, a3);
+		
+		System.out.println(lista);
+		
+		System.out.print("Total de Alunos: ");
+		System.out.println(lista.tamanho());
 	}
 
 }
-
